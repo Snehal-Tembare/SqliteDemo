@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.synerzip.sqlitedemo.MainActivity">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:hint="Contact name"
+        android:id="@+id/contact_name"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_below="@+id/contact_name"
+        android:inputType="phone"
+        android:hint="Mobile no"
+        android:id="@+id/contact_mobile"
+        android:numeric="integer"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_below="@+id/contact_mobile"
+        android:inputType="textEmailAddress"
+        android:hint="Email Address"
+        android:id="@+id/contact_email"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:text="SAVE"
+        android:layout_below="@+id/contact_email"
+        android:id="@+id/idSave"
+        android:onClick="addContact"/>
+
+
+
+
+</RelativeLayout>

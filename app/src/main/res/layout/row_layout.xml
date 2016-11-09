@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_marginTop="10dp"
+    android:layout_height="40dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text="ID"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:layout_marginRight="10dp"
+        android:id="@+id/idUser_ID"/>
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:layout_marginRight="10dp"
+        android:id="@+id/idUser_name"
+        android:layout_toRightOf="@id/idUser_ID"/>
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="MobileNo"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:layout_marginRight="10dp"
+        android:id="@+id/idMobile_No"
+        android:layout_toRightOf="@id/idUser_name"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email ID"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:id="@+id/idEmail_Id"
+        android:textColor="#000000"
+        android:layout_toRightOf="@id/idMobile_No"/>
+<View
+    android:layout_width="match_parent"
+    android:layout_height="2dp"
+    android:background="@android:color/darker_gray"
+    android:layout_below="@+id/idEmail_Id"/>
+
+
+</RelativeLayout>

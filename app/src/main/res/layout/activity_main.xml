@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.synerzip.sqlitedemo.MainActivity">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="ADD CONTACTS"
+        android:id="@+id/idAddCon"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/idAddCon"
+        android:text="View CONTACTS"
+        android:onClick="viewContact"
+        android:id="@+id/idViewCon"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/idViewCon"
+        android:text="Search CONTACTS"
+        android:id="@+id/idSearchCon"
+        android:onClick="searchContact"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/idSearchCon"
+        android:text="Update CONTACTS"
+        android:id="@+id/idUpdateCon"
+        android:onClick="updateContact"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/idUpdateCon"
+        android:text="DELETE CONTACTS"
+        android:id="@+id/idDeleteCon"/>
+
+</RelativeLayout>
